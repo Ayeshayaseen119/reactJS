@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './customComponents/About';
+import NavBar from './customComponents/NavBar';
+// import Sample from './customComponents/Sample';
+import TextForm from './customComponents/TextForm';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+
+      <NavBar title = "TextUtils" about = "About Us" />
+      <div className='container'>
+      <About/>
+      {/* <TextForm heading = "Enter text to analyze" /> */}
+      </div>
+
+
+      
+      
+      {/* <Sample fname = "Ayesha" lname = "Yaseen" /> */}
+      </>
+    );
 }
 
 export default App;
